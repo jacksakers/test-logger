@@ -1,0 +1,10 @@
+[Unit]
+Description=Test Logger from GitHub
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/test-logger
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
